@@ -70,24 +70,26 @@ Hint: You'll want to address their question, and you could add an explanation of
 ### Ticket #1 response:
 
 Hi Steve,
+>
 Hope you are doing well & thanks for your wishes, we are looking forward for you to attend our 5th Birthday party as well :) 
 >
-The pull request status may be rejected due to several factors, such as code complexity, code quality, the number of changed files, etc
+The pull request status may be rejected due to several factors, such as code complexity, code quality, the number of changed files, etc.
+
 Initally you can try command as "git pull upstream master" your pull request is done from a dedicated branch, not from master.
 If that doesnt help, you can try the below steps.
 
-git fetch upstream
-git checkout my_PR_branch
-git rebase upstream/master
-git push --force
+>git fetch upstream
+>git checkout my_PR_branch
+>git rebase upstream/master
+>git push --force
 
-To know more about topic branches you can also refer to this 
+>To know more about topic branches you can also refer to this 
 https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
 
 Let us know how it goes and if that does help your master brach to sycnh with technoweenie master brach.
 >
-Br,
-Dharmik 
+>Br,
+>Dharmik 
 
 (NOTE: I am also thinking to suggest the customer to create a new branch save the work, and synch the master branch with it.
  as i dont have whole insight on this i would prefer to consult some experts and then suggest the customer also wait for his next response at same time.) 
@@ -112,20 +114,20 @@ In regards to your query, You can sync your internal git repository with GitHub 
 To add a GitHub remote to your internal repository, you can do:
 
 $ git remote -v
-origin	https://your-internal-repo.com/group/project (fetch)
-origin	https://your-internal-repo.com/group/project (push)
+>origin	https://your-internal-repo.com/group/project (fetch)
+>origin	https://your-internal-repo.com/group/project (push)
 
-$ git remote add gh https://gitHub.com/group/project
-$ git remote -v
-origin	https://your-internal-repo.com/group/project (fetch)
-origin	https://your-internal-repo.com/group/project (push)
-gh	https://gitHub.com/group/project (fetch)
-gh	https://gitHub.com/group/project (push)
+>$ git remote add gh https://gitHub.com/group/project
+>$ git remote -v
+>origin	https://your-internal-repo.com/group/project (fetch)
+>origin	https://your-internal-repo.com/group/project (push)
+>gh	https://gitHub.com/group/project (fetch)
+>gh	https://gitHub.com/group/project (push)
 >
 Let us know how it goes. 
 >
 Br,
-Dharmik 
+>Dharmik 
 
 
 
@@ -146,23 +148,23 @@ You've checked the account in our admin view, he only has one personal repositor
 
 Hello Jamestk,
 >
-Thank you for reaching us out for this matter, we understand your disappointment that one of your Dev collaboratar fork it without your permission :(  
+>Thank you for reaching us out for this matter, we understand your disappointment that one of your Dev collaboratar fork it without your permission :(  
 >
-i will clear it for you, in a private repository, repository owners can only grant write access to collaborators. 
+>i will clear it for you, in a private repository, repository owners can only grant write access to collaborators. 
 Collaborators can’t have read-only access to repositories owned by a user account, which is why the Dev was able to fork it.
 >
-More information about permission levels for a repository owned by a user account can be found here:
+>More information about permission levels for a repository owned by a user account can be found here:
 https://help.github.com/articles/permission-levels-for-a-user-account-repository/
 >
-For Forking permission you can refer to this 
+>For Forking permission you can refer to this 
 https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-the-forking-policy-for-your-repository
 >
-Yes you can delete the repo by yourself below steps will help you
+>Yes you can delete the repo by yourself below steps will help you
 >
-1.Click to your repository for example yourUsername/yourRepository for example dharmik/test.
-2.Then in the main toolbar of GitHub click on Settings
-3.Scroll to the bottom of the page to the section called Danger Zone and you will find Delete this repository button
-4.When you click it another pop up will appear here you need to type in your Github username and the name of your repository in this format gitHubUsername/nameOfTheRepository and click on the button below which says: I understand the consequences, delete the repository
+>1.Click to your repository for example yourUsername/yourRepository for example dharmik/test.
+>2.Then in the main toolbar of GitHub click on Settings
+>3.Scroll to the bottom of the page to the section called Danger Zone and you will find Delete this repository button
+>4.When you click it another pop up will appear here you need to type in your Github username and the name of your repository in this format gitHubUsername/nameOfTheRepository and click on the button below which says: I understand the consequences, delete the repository
 >
 Br,
 Dharmik
