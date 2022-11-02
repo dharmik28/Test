@@ -69,11 +69,28 @@ Hint: You'll want to address their question, and you could add an explanation of
 
 ### Ticket #1 response:
 
-Hi Steve, 
+Hi Steve,
+Hope you are doing well & thanks for your wishes, we are looking forward for you to attend our 5th Birthday party as well :) 
+>
+The pull request status may be rejected due to several factors, such as code complexity, code quality, the number of changed files, etc
+Initally you can try command as "git pull upstream master" your pull request is done from a dedicated branch, not from master.
+If that doesnt help, you can try the below steps.
 
-Hope you are doing well & thanks for your wishes
+git fetch upstream
+git checkout my_PR_branch
+git rebase upstream/master
+git push --force
 
+To know more about topic branches you can also refer to this 
+https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
 
+Let us know how it goes and if that does help your master brach to sycnh with technoweenie master brach.
+>
+Br,
+Dharmik 
+
+(NOTE: I am also thinking to suggest the customer to create a new branch save the work, and synch the master branch with it.
+ as i dont have whole insight on this i would prefer to consult some experts and then suggest the customer also wait for his next response at same time.) 
 
 ## Ticket #2: Syncing internal server and GitHub?
 
@@ -87,7 +104,28 @@ Hint: One common option is Git remotes. There are others!
 
 ### Ticket #2 response:
 
-_replace this with your response_
+Hi VMG, 
+>
+Hope you are doing well, and thanks for reaching us out. 
+> 
+In regards to your query, You can sync your internal git repository with GitHub adding a remote repository.
+To add a GitHub remote to your internal repository, you can do:
+
+$ git remote -v
+origin	https://your-internal-repo.com/group/project (fetch)
+origin	https://your-internal-repo.com/group/project (push)
+
+$ git remote add gh https://gitHub.com/group/project
+$ git remote -v
+origin	https://your-internal-repo.com/group/project (fetch)
+origin	https://your-internal-repo.com/group/project (push)
+gh	https://gitHub.com/group/project (fetch)
+gh	https://gitHub.com/group/project (push)
+>
+Let us know how it goes. 
+>
+Br,
+Dharmik 
 
 
 
@@ -106,8 +144,28 @@ You've checked the account in our admin view, he only has one personal repositor
 
 ### Ticket #3 response:
 
-_replace this with your response_
-
+Hello Jamestk,
+>
+Thank you for reaching us out for this matter, we understand your disappointment that one of your Dev collaboratar fork it without your permission :(  
+>
+i will clear it for you, in a private repository, repository owners can only grant write access to collaborators. 
+Collaborators can’t have read-only access to repositories owned by a user account, which is why the Dev was able to fork it.
+>
+More information about permission levels for a repository owned by a user account can be found here:
+https://help.github.com/articles/permission-levels-for-a-user-account-repository/
+>
+For Forking permission you can refer to this 
+https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-the-forking-policy-for-your-repository
+>
+Yes you can delete the repo by yourself below steps will help you
+>
+1.Click to your repository for example yourUsername/yourRepository for example dharmik/test.
+2.Then in the main toolbar of GitHub click on Settings
+3.Scroll to the bottom of the page to the section called Danger Zone and you will find Delete this repository button
+4.When you click it another pop up will appear here you need to type in your Github username and the name of your repository in this format gitHubUsername/nameOfTheRepository and click on the button below which says: I understand the consequences, delete the repository
+>
+Br,
+Dharmik
 
 
 ## Love to know more about yourself
@@ -116,31 +174,32 @@ We'd also love if you could share more about yourself so the team can get to kno
 
 ### Name?
 
-_replace this with your answer_
+Dharmik Mehta
 
 ### Location?
 
-_replace this with your answer_
+Mumbai,India & Kuala Lumpur,Malaysia
 
 ### What's an impressionable experience you've had with customer service/support, and why?
 
-_replace this with your answer_
+Working for a company called Microsense India PVT LTD made me realize that service / support is one of the important 
+function for any business and its plays a make or brake role between customers and Company hence this is why.
 
 ### Tell us about a time where you helped someone.
 
-_replace this with your answer_
+The list is long and i might have to write a book on this, last time it was where one of the enduser was not able to install the application on a server found out that from registry the option to auto update the TLS certs is turned off and most of the cloud based application needs the certs to be up to date hence i helped him to debug it and resolve it as well.
 
 ### What appeals to you about GitHub, as a company you'd potentially be working for?
 
-_replace this with your answer_
+I have come across GITHUB website's many time in my life and i've realize it, that it plays one of the important role for automation or software developement in 21st century this is why i want to be part of it.
 
 ### How would you describe what GitHub does to a non-technical person?
 
-_replace this with your answer_
+Just like a vehicle( car) goes through assembly line for developement just like that GITHUB is a production plant for software along with a garage at the same time 
 
 ### What motivates you to work in support?
 
-_replace this with your answer_
+Helping customers and being a bridge between R&D and customers at same time motivates me to work in support.
 
 Thanks for taking the time and effort to tell us more about yourself. We look forward to reading your responses.
 
