@@ -79,17 +79,20 @@ Initally you can try command as "git pull upstream master" your pull request is 
 If that doesnt help, you can try the below steps.
 
 >git fetch upstream
+>
 >git checkout my_PR_branch
+>
 >git rebase upstream/master
+>
 >git push --force
-
->To know more about topic branches you can also refer to this 
+>
+To know more about topic branches you can also refer to this 
 https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
 
 Let us know how it goes and if that does help your master brach to sycnh with technoweenie master brach.
 >
 >Br,
->Dharmik 
+> /. Dharmik 
 
 (NOTE: I am also thinking to suggest the customer to create a new branch save the work, and synch the master branch with it.
  as i dont have whole insight on this i would prefer to consult some experts and then suggest the customer also wait for his next response at same time.) 
@@ -115,13 +118,19 @@ To add a GitHub remote to your internal repository, you can do:
 
 $ git remote -v
 >origin	https://your-internal-repo.com/group/project (fetch)
+
 >origin	https://your-internal-repo.com/group/project (push)
 
 >$ git remote add gh https://gitHub.com/group/project
+
 >$ git remote -v
+
 >origin	https://your-internal-repo.com/group/project (fetch)
+
 >origin	https://your-internal-repo.com/group/project (push)
+
 >gh	https://gitHub.com/group/project (fetch)
+
 >gh	https://gitHub.com/group/project (push)
 >
 Let us know how it goes. 
@@ -162,8 +171,11 @@ https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-f
 >Yes you can delete the repo by yourself below steps will help you
 >
 >1.Click to your repository for example yourUsername/yourRepository for example dharmik/test.
+>
 >2.Then in the main toolbar of GitHub click on Settings
+>
 >3.Scroll to the bottom of the page to the section called Danger Zone and you will find Delete this repository button
+>
 >4.When you click it another pop up will appear here you need to type in your Github username and the name of your repository in this format gitHubUsername/nameOfTheRepository and click on the button below which says: I understand the consequences, delete the repository
 >
 Br,
